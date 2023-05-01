@@ -9,7 +9,7 @@ import mysql.connector
 dataBase = mysql.connector.connect(
 	host = 'localhost',
 	user = 'root',
-	passwd = 'Hom@1960'
+	passwd = 'Hom@1960',
 
 	)
 
@@ -17,6 +17,6 @@ dataBase = mysql.connector.connect(
 cursorObject = dataBase.cursor()
 
 # Creat a database
-cursorObject.execute('CREATE DATABASE Pyrad')
+cursorObject.execute("CREATE DATABASE Pyrad")
 
-print('ALL DONE!')
+print("ALL DONE!")
